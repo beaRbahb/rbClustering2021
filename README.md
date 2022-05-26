@@ -18,7 +18,7 @@ These variables combine some amount of receiving ability, ability to break tackl
 
 I used the Factoextra library by following this great walk through of KMeans clustering: http://uc-r.github.io/kmeans_clustering to perform kmeans (and some PCA). I would highly recommend, as this simplified the process greatly. 
 
-#### Clustering
+## Clustering
 
 The number of clusters to utilize is a bit of an art, so here are three approaches: 
 
@@ -30,7 +30,8 @@ Fviz_cluster was used to visually inspect the various number of clusters:
 
 ![image](https://user-images.githubusercontent.com/92967109/169906831-5238889b-94bd-4ccd-b2e1-0d5b73ee4f43.png)
 
-I used 6 clusters to further inspect the data.
+#### Use of 6 Clusters
+
 ![image](https://user-images.githubusercontent.com/92967109/170167016-535a94d0-826b-4349-8ea7-83938602894f.png)
 
 #### Cluster Overviews
@@ -57,7 +58,6 @@ Cluster 5 - Average running backs
 Cluster 6 - Average running back with receiving ability
 * Average in all categoies but highest in targets per route run 
 
-
 ## GT Tables
 
 Next the RB's were added into a GT Table along with their team wordmark
@@ -70,12 +70,20 @@ Next the RB's were filtered into RB 1's from each team:
 
 ![image](https://user-images.githubusercontent.com/92967109/170171688-7d8ed38d-6cf9-43cc-a566-bfcc7bd0f460.png)
 
-
 ## Rushing Yards Over Expected 
 
 Then the RB's RYOE were averaged and put in another GT Table: 
 
-![image](https://user-images.githubusercontent.com/92967109/169938538-2ec414ba-3399-4172-a364-e5475af38869.png)
+![image](https://user-images.githubusercontent.com/92967109/170406688-1fcbb305-9d82-47d9-8969-5adcf86ac4a4.png)
+
+We can see ryoe by cluster generally reflects the type of RB we would expect: 
+
+* Cluster 1 - Below average running backs
+* Cluster 2 - Above average all around running backs
+* Cluster 3 - Elite Running Backs with little receiving production
+* Cluster 4 - Slightly better than Cluster 1 without receiving production
+* Cluster 5 - Average running backs
+* Cluster 6 - Average running back with receiving ability
 
 ## Salary Cap Data
 
